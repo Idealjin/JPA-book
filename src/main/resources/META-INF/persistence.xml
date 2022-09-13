@@ -11,6 +11,7 @@
             <property name="javax.persistence.jdbc.password" value=""/>
             <property name="javax.persistence.jdbc.url" value="jdbc:h2:tcp://localhost/~/test"/>
             <property name="hibernate.dialect" value="org.hibernate.dialect.H2Dialect" />
+            <!-- dialect는 방언 설정, 방언 설정을 해주면 해당 문법에 맞게 JPA가 알아서 처리해준다.-->
 
             <!-- 옵션 -->
             <property name="hibernate.show_sql" value="true" />
