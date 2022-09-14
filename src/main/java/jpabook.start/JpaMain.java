@@ -48,7 +48,7 @@ public class JpaMain {
         Member findMember = em.find(Member.class, id);
         System.out.println("findMember=" + findMember.getUsername() + ", age=" + findMember.getAge());
 
-        //목록 조회
+        //목록 조회, 엔티티 객체를 대상으로 쿼리
         List<Member> members = em.createQuery("select m from Member m", Member.class).getResultList();
         System.out.println("members.size=" + members.size());
 
